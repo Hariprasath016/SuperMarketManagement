@@ -1,12 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-import LoginSignUp from './Components/LoginSignup/LoginSignUp';
+import "./App.css";
+import React from 'react';
+import { BrowserRouter } from "react-router-dom";
+import Main from './Components/Main.js'
 
 function App() {
   return (
-    <div>
-      <LoginSignUp/>
-    </div>
+    <>
+      <BrowserRouter>
+
+        <Main />
+
+      </BrowserRouter>
+    </>
   );
 }
 
